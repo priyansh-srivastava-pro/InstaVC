@@ -1,0 +1,220 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --baseColor: #807e7e;
+    --whiteColor: #FFFFFF;
+    --primaryColor: #2faf0b;
+
+    --textBlackPrimary: rgba(0,0,0,0.87);
+    --primaryBlackLight: rgba(0,0,0,0.54);
+    --textBlackDisable: rgba(0,0,0,0.37);
+}
+
+html, body {
+    width: 100%;
+    height: 100vh;
+}
+
+/* body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--textBlackPrimary);
+    font-size: 0.875rem;
+    line-height: 1.2;
+    background-color: var(--whiteColor);
+    font-weight: 400;
+    left: 0;
+    right: 0;
+} */
+
+
+
+/* BASE CONTAINER */
+.baseCntnr {
+    height: 4rem;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+    background-color: var(--whiteColor);
+}
+
+/* align Centre */
+.alignCntnr {
+    align-items: center;
+}
+
+/* PADDING */
+.pdngXS   { padding: 0.25rem;  }
+.pdngSM   { padding: 0.50rem;  }
+.pdngLG   { padding: 0.75rem;  }
+.pdngMD   { padding: 1.0rem;   }
+.pdngHXXL { padding: 0 9.0rem; }
+.pdngXLG  { padding: 1.125rem; }
+
+.pdngHztlXXS  { padding: 0 4px;  }
+.pdngHztlXS   { padding: 0 8px;  }
+.pdngHztlSM   { padding: 0 12px; }
+.pdngHztlMD   { padding: 0 16px; }
+.pdngHztlLG   { padding: 0 24px; }
+.pdngHztlXLG  { padding: 0 40px; }
+.pdngHztl     { padding: 10px 530px  10px 10px; }
+
+.pdngVtcllXXS  { padding: 4px 0;  }
+.pdngVtcllXS   { padding: 8px 0;  }
+.pdngVtcllSM   { padding: 12px 0; }
+.pdngVtcllMD   { padding: 16px 0; }
+.pdngVtcllLG   { padding: 24px 0; }
+.pdngVtcllXLG  { padding: 40px 0; }
+
+/* MARGIN */
+
+.mrgnXXS { margin: 4px; }
+.mrgnXS { margin: 8px; }
+.mrgnSM { margin: 12px; }
+.mrgnMD { margin: 16px; }
+.mrgnLG { margin: 24px; }
+.mrgnXLG { margin: 40px; }
+
+.mrgnVrtclXXS { margin: 4px 0; }
+.mrgnVrtclXS { margin: 8px 0; }
+.mrgnVrtclSM { margin: 12px 0; }
+.mrgnVrtclMD { margin: 16px 0; }
+.mrgnVrtclLG { margin: 24px 0; }
+.mrgnVrtclXLG { margin: 40px 0; }
+.mrgnVrtclXXLG { margin: 40px 10px;}
+
+.mrgnLeft { margin-left: 615px;}
+.mrgnLeft2 { margin-left: 80px; font-size: 1.2rem; }
+.mrgnleft3 { margin-left: 300px; background-color: var(--whiteColor); border-width: thin; color: grey; border-color: darkgray; cursor: pointer;}
+.mrgnleft4 { margin-left: 10px; background-color: var(--whiteColor); border-width: thin; color: grey; border-color: darkgray; cursor: pointer;}
+
+.views {
+    font-size: 1rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.last {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+
+.para{
+    font-size: 3rem;
+    color: var(--primaryColor);
+    margin-left: 90px;
+}
+
+.flexRow {
+    display: flex;
+    flex: none;
+    width: 100%;
+    font-size: 1.7rem;
+}
+
+.flexColumn {
+    display: flex;
+    flex: none;
+    flex-direction: column;    
+}
+
+.flexMinRow {
+    display: flex;
+    min-width: 0;
+}
+
+.mainCntnr {
+    min-height: 5%;
+    padding-top: 8rem;
+    flex: 1;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.flexAuto {
+    display: flex;
+    flex: none;
+    min-width: 24px;
+}
+
+
+.img {
+    width: 40px;
+    height: 40px;
+    border-radius: 6rem;
+    
+}
+
+.img1 {
+    height: 100px;
+    width: 100px;
+    border-radius: 6rem;
+}
+
+li, a {
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+.anchor {
+    font-size: 1rem;
+}
+
+.btn {
+    height: 30px;
+    width: 600px;
+    background-color: rgb(215,212,212);
+    border: none;
+    border-radius: 10px
+}
+
+.btnn {
+    width: 80px;
+    height: 30px;
+    background-color: #21823ee7;
+    border: none;
+    color: var(--whiteColor);
+    border-radius: 10px;
+}
+
+.btnnn {
+    background-color: white;
+    border: none;
+    margin-top: 1rem;
+    border-radius: 0.4rem;
+    border: 2px solid;
+    height: 35px;
+    color: #21823ee7;
+    width: 100px;
+}
+
+.para1 {
+    font-size: 2.5rem;
+    padding-top: 30px;
+}
+
+.location {
+    margin-top: 1.5rem;
+}
+
+hr {
+    width: 10%;
+    border-top: 1px dotted ;
+}
+
+.g:hover {
+    padding: 1px 5px;
+    background-color: black;
+    color: var(--whiteColor);
+    border-radius: 25px;
+    cursor: pointer;
+}
+
